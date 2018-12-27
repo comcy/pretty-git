@@ -5,6 +5,13 @@ This repository contains a collection of some wrappers to easily us git built-in
 **Content**
 
 - [pretty git](#pretty-git)
+  - [Intention](#intention)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Tools](#tools)
+  - [Development](#development)
+  - [Tests](#tests)
+  - [License](#license)
 
 ---
 
