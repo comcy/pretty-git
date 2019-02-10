@@ -26,6 +26,12 @@ This repository contains a collection of some wrappers to easily us git built-in
 
 ### Tools
 
+**Submodules**
+
+```
+$ git submodule foreach 'echo $path `git rev-parse HEAD`' > ./build_matrix.log --recursive
+```
+
 
 ## Development
 
