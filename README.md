@@ -28,12 +28,15 @@ This repository contains a collection of some wrappers to easily us git built-in
 
 **Submodules**
 
-```
-$ git submodule foreach 'echo $path `git rev-parse HEAD`' --recursive > ./build_matrix.log
-```
+First level submodules
 
 ```
-$ git submodule foreach "git submodule foreach `echo -e "$path `git rev-parse @`\\n"'" --recursive
+$ git submodule foreach 'echo `git rev-parse @`' 
+```
+Submodules deeper then first level
+
+```
+$ git submodule foreach 'git submodule foreach --recursive `echo "git rev-parse @"`'
 ```
 
 ## Development
